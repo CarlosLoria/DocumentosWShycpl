@@ -77,8 +77,7 @@ Antes de registrar un pago de cuota de mantenimiento se debe realizar una consul
 	"numeroDocumentoPago": "1234567890",
 	"fechaPago": "2019-08-20T00:00:00",
 	"montoRecibido": 73000.0000,
-    "cuentaBancaria":"CR32010200009361605552",
-  	"codigoAccion": 239,
+    	"codigoAccion": 239,
 	"tipoDocumento": 1,
 	"numeroDocumento": "R630048"}'
 	
@@ -88,7 +87,6 @@ Antes de registrar un pago de cuota de mantenimiento se debe realizar una consul
     "numeroDocumentoPago": "1234567890",
     "fechaPago": "2019-08-20T00:00:00",
     "montoRecibido": 73000.0000,
-    "cuentaBancaria": "CR32010200009361605552",
     "codigoAccion": 239,
     "tipoDocumento": 1,
     "numeroDocumento": "R630048"}
