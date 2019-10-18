@@ -1,0 +1,55 @@
+Controlador Status.
+
+Podemos obtener la lista general de "status" o un registro en particular.
+
+Lista:
+
+curl -X POST \
+  http://wshycpl.puntaleonaonline.com/api/Status/Lista \
+  -H 'Authorization: Bearer 7_8A1NCvmRCPJKeXWEZZ5kApxuNBFSaQ6Pl-urIgBBP4bAiMJGWyRNwgNOqD7vewF6eVSyBkJhZA5qGUhAS08mGltl5N_hqsiBflN0K6slodV5H0BDV8oZNjDR5Fjqn9NrhLZtBbmkoVzl6ILD7GfkIe0L0oMTaH4mSZTTVXlXy-IxL-eBQcHx4vFaBQ300U8UF5nM7YMG-VmQ1zAbKoQ6j3RyBt-sAUAy1HQ8Zt3LhO4M_PTqsZ6sCCDebXXzB6JN27p_5yDdyTxkVkpnuNaXujHmx7DjtZVKUtZTaUVIXkmgB7HfHO7f81hy7ZncklELbfRy-PYu62glQlYosPfFiul_mk06RdF8zle70QNi8qYzQ8av6cOLccojagwVvkmAacAw86_SwkezLBEtumVOi9Z7VViLplrKjkt4AXwI2jVv18lr1HpL9seSygoi6xTz31Glnsz6viMOAK8wWKy5p95Dtv6MraGihIz_-HJM2wxn10Sm8MbPzPqd34_Mf_' \
+  -H 'Postman-Token: 73491b8c-8375-4cf6-afb8-7634ec24ada3' \
+  -H 'cache-control: no-cache'
+
+
+Respuesta:
+[
+    {
+        "codigoStatus": 1,
+        "nombreStatus": "Activo"
+    },
+    {
+        "codigoStatus": 2,
+        "nombreStatus": "Inactivo"
+    },
+    {
+        "codigoStatus": 3,
+        "nombreStatus": "Ausente"
+    },
+    {
+        "codigoStatus": 4,
+        "nombreStatus": "Suspendido"
+    },
+    {
+        "codigoStatus": 5,
+        "nombreStatus": "Retirado"
+    },
+    {
+        "codigoStatus": 6,
+        "nombreStatus": "Ocacional"
+    }
+]
+
+
+Leer. Incluir el parámetro codigoStatus
+
+curl -X POST \
+  'http://wshycpl.puntaleonaonline.com/api/Status/Leer?codigoStatus=3' \
+  -H 'Authorization: Bearer 7_8A1NCvmRCPJKeXWEZZ5kApxuNBFSaQ6Pl-urIgBBP4bAiMJGWyRNwgNOqD7vewF6eVSyBkJhZA5qGUhAS08mGltl5N_hqsiBflN0K6slodV5H0BDV8oZNjDR5Fjqn9NrhLZtBbmkoVzl6ILD7GfkIe0L0oMTaH4mSZTTVXlXy-IxL-eBQcHx4vFaBQ300U8UF5nM7YMG-VmQ1zAbKoQ6j3RyBt-sAUAy1HQ8Zt3LhO4M_PTqsZ6sCCDebXXzB6JN27p_5yDdyTxkVkpnuNaXujHmx7DjtZVKUtZTaUVIXkmgB7HfHO7f81hy7ZncklELbfRy-PYu62glQlYosPfFiul_mk06RdF8zle70QNi8qYzQ8av6cOLccojagwVvkmAacAw86_SwkezLBEtumVOi9Z7VViLplrKjkt4AXwI2jVv18lr1HpL9seSygoi6xTz31Glnsz6viMOAK8wWKy5p95Dtv6MraGihIz_-HJM2wxn10Sm8MbPzPqd34_Mf_' \
+  -H 'Postman-Token: 294f6b3c-9a40-4771-be5a-d9db8f78d30d' \
+  -H 'cache-control: no-cache'
+
+Respuesta:
+{
+    "codigoStatus": 3,
+    "nombreStatus": "Ausente"
+}

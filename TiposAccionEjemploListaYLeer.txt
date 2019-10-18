@@ -1,0 +1,49 @@
+Controlador Status.
+
+Podemos obtener la lista general de "status" o un registro en particular.
+
+Lista:
+
+curl -X POST \
+  http://wshycpl.puntaleonaonline.com/api/TiposAccion/Lista \
+  -H 'Authorization: Bearer 7_8A1NCvmRCPJKeXWEZZ5kApxuNBFSaQ6Pl-urIgBBP4bAiMJGWyRNwgNOqD7vewF6eVSyBkJhZA5qGUhAS08mGltl5N_hqsiBflN0K6slodV5H0BDV8oZNjDR5Fjqn9NrhLZtBbmkoVzl6ILD7GfkIe0L0oMTaH4mSZTTVXlXy-IxL-eBQcHx4vFaBQ300U8UF5nM7YMG-VmQ1zAbKoQ6j3RyBt-sAUAy1HQ8Zt3LhO4M_PTqsZ6sCCDebXXzB6JN27p_5yDdyTxkVkpnuNaXujHmx7DjtZVKUtZTaUVIXkmgB7HfHO7f81hy7ZncklELbfRy-PYu62glQlYosPfFiul_mk06RdF8zle70QNi8qYzQ8av6cOLccojagwVvkmAacAw86_SwkezLBEtumVOi9Z7VViLplrKjkt4AXwI2jVv18lr1HpL9seSygoi6xTz31Glnsz6viMOAK8wWKy5p95Dtv6MraGihIz_-HJM2wxn10Sm8MbPzPqd34_Mf_' \
+  -H 'Postman-Token: e34d8977-b3e2-4bdc-b3dc-3153f3190d58' \
+  -H 'cache-control: no-cache'
+
+
+Respuesta:
+[
+    {
+        "codigoTipoAccion": 1,
+        "nombreTipoAccion": "Comun                                             "
+    },
+    {
+        "codigoTipoAccion": 2,
+        "nombreTipoAccion": "Preferencial                                      "
+    },
+    {
+        "codigoTipoAccion": 3,
+        "nombreTipoAccion": "Membresia                                         "
+    },
+    {
+        "codigoTipoAccion": 4,
+        "nombreTipoAccion": "Sociedades"
+    }
+]
+
+
+Leer. Incluir el parámetro codigoTipoAccion
+
+curl -X POST \
+  'http://wshycpl.puntaleonaonline.com/api/TiposAccion/Leer?CodigoTipoAccion=1' \
+  -H 'Authorization: Bearer 7_8A1NCvmRCPJKeXWEZZ5kApxuNBFSaQ6Pl-urIgBBP4bAiMJGWyRNwgNOqD7vewF6eVSyBkJhZA5qGUhAS08mGltl5N_hqsiBflN0K6slodV5H0BDV8oZNjDR5Fjqn9NrhLZtBbmkoVzl6ILD7GfkIe0L0oMTaH4mSZTTVXlXy-IxL-eBQcHx4vFaBQ300U8UF5nM7YMG-VmQ1zAbKoQ6j3RyBt-sAUAy1HQ8Zt3LhO4M_PTqsZ6sCCDebXXzB6JN27p_5yDdyTxkVkpnuNaXujHmx7DjtZVKUtZTaUVIXkmgB7HfHO7f81hy7ZncklELbfRy-PYu62glQlYosPfFiul_mk06RdF8zle70QNi8qYzQ8av6cOLccojagwVvkmAacAw86_SwkezLBEtumVOi9Z7VViLplrKjkt4AXwI2jVv18lr1HpL9seSygoi6xTz31Glnsz6viMOAK8wWKy5p95Dtv6MraGihIz_-HJM2wxn10Sm8MbPzPqd34_Mf_' \
+  -H 'Postman-Token: f0ca44b3-f6d7-4db6-bd2c-b61f1e5287ad' \
+  -H 'cache-control: no-cache'
+
+Respuesta:
+{
+    "codigoTipoAccion": 1,
+    "nombreTipoAccion": "Comun                                             "
+}
+
+

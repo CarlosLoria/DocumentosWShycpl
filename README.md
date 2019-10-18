@@ -9,7 +9,7 @@ La actualización de datos de acciones tiene dos endpoints. Uno para Actualizar 
 
 **Actualizar**
 
-[Endpoint de Actualizacion ](./DatosAcciones,md )
+[Endpoint de Actualizacion ](DatosAcciones,md )
 
 **Consultar**
 
